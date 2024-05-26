@@ -5,12 +5,13 @@ Created on Sun May 26 11:58:49 2024
 @author: SOUMEN
 """
 #basic linear regression
-import pandas as pd
+#import necessary library 
+import pandas as pd  #for reading CSV file
 import matplotlib.pyplot as plt
-import numpy as np
 
 data = pd.read_csv('data.csv')
 
+#defing loss function
 def loss_func(m,c,points):
     error = 0
     for i in range (len(points)):
@@ -18,7 +19,8 @@ def loss_func(m,c,points):
         y = points.iloc[i].ordinate
         error = error + (y - (m*x + c))**2
     error/float(len(points))
-    
+
+#defining gradient descent
 def gradient_descent(new_m, new_c, points, L):
     m_gradient = 0
     c_gradient = 0
@@ -36,15 +38,14 @@ def gradient_descent(new_m, new_c, points, L):
     c = new_c - c_gradient*L    
     return m, c
 
+#initial guess of m and c
 m = 0
 c = 0
-L = 0.0001
-epochs = 300
+L = 0.0001  #learing rate 
+epochs = 300 #number of cycle
 
 for i in range(epochs):
     if i < 10:
-        print(f"Epoch: {i}")
-        print(m,c)
         plt.scatter(data.abscissa, data.ordinate, color = "blue")
         plt.plot(list(range(10,100)), [m*x + c for x in range(10,100)], color="red")
         plt.pause(1.0)
@@ -53,9 +54,10 @@ for i in range(epochs):
 
 plt.show()    
 
-
+#print the final value of m and c
 print(m,c)
 
+#shows final plot 
 plt.scatter(data.abscissa, data.ordinate, color = "blue")
 plt.plot(list(range(10,100)), [m*x + c for x in range(10,100)], color="red")
 plt.show()
