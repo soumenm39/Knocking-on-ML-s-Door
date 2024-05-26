@@ -6,11 +6,9 @@ Created on Sun May 26 10:21:37 2024
 """
 
 import numpy as np
-#from scipy import optimize
 import matplotlib.pyplot as plt
 import csv
 
-#plt.style.use('seaborn-poster')
 # generate x and y
 x = np.linspace(10, 100, 101)
 y = 1 + x*(-1)**2*np.random.uniform(low=1,high=3,size=len(x)) + x*np.random.random(size=len(x))
