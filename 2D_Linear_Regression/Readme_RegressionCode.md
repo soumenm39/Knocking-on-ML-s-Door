@@ -88,23 +88,7 @@ Installation
 
 
 
-Clone the repository:
-
-git clone https://github.com/yourusername/2d-linear-regression.git
-cd 2d-linear-regression
-
-
-
-Install the required libraries:
-
-pip install -r requirements.txt
-
-(Create a requirements.txt file with pandas, numpy, and matplotlib if needed.)
-
-
-
-Download the dataset (2D_regression_Data.csv) from the Kaggle link above and place it in the project directory.
-
+Download the dataset 2D_regression_Data.csv
 
 
 Run the script in Python IDLE for the best animated visualization, or use Jupyter Notebook with %matplotlib widget enabled.
@@ -251,14 +235,7 @@ Visualization Steps: First 30 iterations are animated for clarity
 Notes
 
 
-
-
-
 The animation works best in Python IDLE due to its handling of matplotlib animations. In Jupyter Notebook, %matplotlib widget is required for interactive plots, but performance may vary.
-
-
-
-The dataset path (/kaggle/input/2d-regression-data/2D_regression_Data.csv) is specific to Kaggle. Adjust the path to your local directory (e.g., 2D_regression_Data.csv).
 
 
 
@@ -266,23 +243,6 @@ The learning rate and number of epochs can be tuned for faster convergence or be
 
 Future Improvements
 
-
-
-
-
-Add data preprocessing (e.g., normalization) to improve convergence.
-
-
-
-Implement regularization (e.g., L2) to prevent overfitting.
-
-
-
-Enhance visualization with more interactive elements (e.g., using plotly).
-
-
-
-Add error metrics (e.g., R² score) to evaluate model performance.
 
 Author
 
