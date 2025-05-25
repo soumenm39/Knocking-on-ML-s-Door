@@ -3,6 +3,7 @@
 
 ![Figure_1](https://github.com/user-attachments/assets/1b47f8b9-adcf-4a22-9a78-3302db90be01)
 
+![2D_Regression - Made with Clipchamp (1)](https://github.com/user-attachments/assets/83ab5f80-d427-4c08-ba9c-a35a8163a97d)
 
 **Overview**
 A 2D linear regression model using gradient descent, with animated 3D plots visualizing the fitting process. The dataset is synthetically generated based on a plane equation with added randomness. 
