@@ -1,5 +1,9 @@
 **2D Linear Regression with Animated Visualization**
 
+
+![Figure_1](https://github.com/user-attachments/assets/1b47f8b9-adcf-4a22-9a78-3302db90be01)
+
+
 **Overview**
 A 2D linear regression model using gradient descent, with animated 3D plots visualizing the fitting process. The dataset is synthetically generated based on a plane equation with added randomness. 
 
