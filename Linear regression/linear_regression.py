@@ -5,13 +5,12 @@ Created on Sun May 26 11:58:49 2024
 @author: SOUMEN
 """
 #basic linear regression
-#import necessary library 
-import pandas as pd  #for reading CSV file
+import pandas as pd
 import matplotlib.pyplot as plt
+import numpy as np
 
 data = pd.read_csv('data.csv')
 
-#defing loss function
 def loss_func(m,c,points):
     error = 0
     for i in range (len(points)):
@@ -19,8 +18,7 @@ def loss_func(m,c,points):
         y = points.iloc[i].ordinate
         error = error + (y - (m*x + c))**2
     error/float(len(points))
-
-#defining gradient descent
+    
 def gradient_descent(new_m, new_c, points, L):
     m_gradient = 0
     c_gradient = 0
@@ -38,26 +36,33 @@ def gradient_descent(new_m, new_c, points, L):
     c = new_c - c_gradient*L    
     return m, c
 
-#initial guess of m and c
 m = 0
 c = 0
-L = 0.0001  #learing rate 
-epochs = 300 #number of cycle
+L = 0.0001
+epochs = 300
+
+fig = plt.figure(figsize = (8, 5))
+plt.pause(5)
 
 for i in range(epochs):
     if i < 10:
+        print(f"Epoch: {i}")
+        print(m,c)
+        plt.title("1D Linear Regression")
+        plt.xlabel("Feature")
+        plt.ylabel("Target Variable")
         plt.scatter(data.abscissa, data.ordinate, color = "blue")
         plt.plot(list(range(10,100)), [m*x + c for x in range(10,100)], color="red")
+        plt.draw()
         plt.pause(1.0)
-        plt.close()
+        plt.clf()
     m , c = gradient_descent(m , c, data, L)
 
-plt.show()    
+#plt.show()    
 
-#print the final value of m and c
+print(epochs)
 print(m,c)
 
-#shows final plot 
 plt.scatter(data.abscissa, data.ordinate, color = "blue")
 plt.plot(list(range(10,100)), [m*x + c for x in range(10,100)], color="red")
 plt.show()
