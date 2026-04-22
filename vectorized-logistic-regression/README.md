@@ -8,8 +8,6 @@
 A logistic regression model using gradient descent for binary classification, with animated decision boundary visualization during training. The dataset is used to classify whether a student will pass or fail based on two exam scores.
 
 
-![Figure\_1](![Uploading loss_logistics_regression.png…])
-
 ---
 
 ## Features
@@ -24,7 +22,7 @@ A logistic regression model using gradient descent for binary classification, wi
 
 
 
-![Figure\_2](![Uploading 2D_Logistics_Regression - Made with Clipchamp.gif…])
+![Figure\_1](![Uploading 2D_Logistics_Regression - Made with Clipchamp.gif…])
 
 ---
 
