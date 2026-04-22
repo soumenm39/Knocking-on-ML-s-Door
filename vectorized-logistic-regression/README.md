@@ -21,8 +21,8 @@ A logistic regression model using gradient descent for binary classification, wi
 * Binary classification using exam score dataset
 
 
+<img width="400" height="225" alt="2D_Logistics_Regression - Made with Clipchamp" src="https://github.com/user-attachments/assets/b09e10c0-caa1-4caf-905a-58793f6357ef" />
 
-![Figure\_1](![Uploading 2D_Logistics_Regression - Made with Clipchamp.gif…])
 
 ---
 
