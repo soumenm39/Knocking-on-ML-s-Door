@@ -1,4 +1,4 @@
-**2D Linear Regression with Animated Visualization**
+**2D Linear Regression with Animated Visualization (Vectorized)**
 
 
 ![Figure_1](https://github.com/user-attachments/assets/1b47f8b9-adcf-4a22-9a78-3302db90be01)
@@ -59,4 +59,4 @@ generate_data.py: Generates 2D_regression_Data.csv using the plane z = 4 - 2x + 
 
 Soumen Mondal
 Senior Research Fellow, Saha Institute of Nuclear Physics
-Email: sm39@iitbbs.ac.in
+Email: soumen.mondal@saha.ac.in
