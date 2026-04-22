@@ -1,13 +1,10 @@
-<img width="2880" height="1800" alt="loss_logistics_regression" src="https://github.com/user-attachments/assets/27e1701b-0e84-4bb4-8aa7-6683632fb1f6" /><img width="2880" height="1800" alt="loss_logistics_regression" src="https://github.com/user-attachments/assets/a7b0875b-a0b4-4f5f-b438-7f1b812f3f2f" /># Logistic Regression with Animated Decision Boundary
-
-
 ---
 
 ## Overview
 
 A logistic regression model using gradient descent for binary classification, with animated decision boundary visualization during training. The dataset is used to classify whether a student will pass or fail based on two exam scores.
 
-
+<img width="2880" height="1800" alt="loss_logistics_regression" src="https://github.com/user-attachments/assets/a7b0875b-a0b4-4f5f-b438-7f1b812f3f2f" /># Logistic Regression with Animated Decision Boundary
 ---
 
 ## Features
